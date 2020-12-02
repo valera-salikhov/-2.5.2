@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Задание 2.5.2</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="верно">Верно</string>
+    <string name="неверно">Неверно</string>
+
+</resources>
