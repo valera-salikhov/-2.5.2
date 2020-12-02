@@ -3,7 +3,7 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="enter">Enter</string>
-    <string name="верно">Верно</string>
-    <string name="неверно">Неверно</string>
+    <string name="True">Верно</string>
+    <string name="False">Неверно</string>
 
 </resources>

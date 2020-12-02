@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String str_password = getResources().getString(R.string.password);
         if (str_login.equals("1")) {
             if (str_password.equals("1")) {
-                text_answer.setText(R.string.верно);
+                text_answer.setText(R.string.True);
                 text_answer.setTextColor(getResources().getColor(R.color.green));
             } else {
-                text_answer.setText(R.string.неверно);
+                text_answer.setText(R.string.False);
                 text_answer.setTextColor(getResources().getColor(R.color.red));
             }
         } else {
-            text_answer.setText(R.string.неверно);
+            text_answer.setText(R.string.False);
             text_answer.setTextColor(getResources().getColor(R.color.red));
         }
     }
