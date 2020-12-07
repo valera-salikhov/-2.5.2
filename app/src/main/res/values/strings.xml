@@ -5,5 +5,7 @@
     <string name="enter">Enter</string>
     <string name="True">Верно</string>
     <string name="False">Неверно</string>
+    <string name="hint_login">Login is 1</string>
+    <string name="hint_password">Password is 1</string>
 
 </resources>

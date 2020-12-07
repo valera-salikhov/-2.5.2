@@ -14,6 +14,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText ed_login, ed_password;
     Button enter;
 
+    private boolean equals(String str1, String str2) {
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.charAt(i) != str2.charAt(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +43,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @SuppressLint("ResourceAsColor")
     @Override
     public void onClick(View v) {
-        String str_login = getResources().getString(R.string.login);
-        String str_password = getResources().getString(R.string.password);
-        if (str_login.equals("1")) {
-            if (str_password.equals("1")) {
+        String str_login = ed_login.getText().toString();
+        String str_password = ed_password.getText().toString();
+        if (equals(str_login, "1")) {
+            if (equals(str_password, "1")) {
                 text_answer.setText(R.string.True);
                 text_answer.setTextColor(getResources().getColor(R.color.green));
             } else {
